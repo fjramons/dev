@@ -32,7 +32,6 @@ spec:
       #   effect: NoSchedule
       containers:
       - name: tester
-        # image: ghcr.io/fjramons/dev/dns-tester:0.1
         image: fjramons/dns-tester:0.1
         env:
           - name: DESTINATION
