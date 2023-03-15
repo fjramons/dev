@@ -1,0 +1,17 @@
+DNS-TESTER
+==========
+
+Thank you for installing {{ .Chart.Name }}, a tool for testing the DNS service of your Kubernetes cluster.
+
+Your release is named {{ .Release.Name }}, and is running in the namespace {{.Release.Namespace}}.
+
+Your current release is configured to query cluster's DNS about the destination "{{ .Values.config.destination }}" every {{ .Values.config.interval }} seconds.
+
+To retrieve the logs of the DNS queries submitted by the tool, try:
+
+  $ kubectl -n {{.Release.Namespace}} logs -l app.kubernetes.io/name=dns-tester -f
+
+To learn more about the release, try:
+
+  $ helm status {{ .Release.Name }}
+  $ helm get all {{ .Release.Name }}
