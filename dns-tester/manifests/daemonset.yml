@@ -32,7 +32,7 @@ spec:
       #   effect: NoSchedule
       containers:
       - name: tester
-        image: fjramons/dns-tester:0.1
+        image: fjramons/dns-tester:0.2
         env:
           - name: DESTINATION
             value: google.com

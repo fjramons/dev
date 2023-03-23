@@ -126,7 +126,7 @@ Image build and push:
 
 # Build
 export REPO=docker.io/fjramons
-export TAG=0.1
+export TAG=0.2
 docker build -t $REPO/dns-tester:$TAG .
 docker image ls | grep dns-tester
 

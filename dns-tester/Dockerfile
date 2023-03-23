@@ -17,4 +17,4 @@ WORKDIR /work
 
 COPY repeat.sh .
 
-CMD ./repeat.sh dig ${DESTINATION} +short
+CMD ./repeat.sh dig ${DESTINATION} +tries=1 +short
